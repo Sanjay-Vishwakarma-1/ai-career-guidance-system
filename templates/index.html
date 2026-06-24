@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Career Guide · 3D Functional</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/tom-select/dist/css/tom-select.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/tom-select/dist/js/tom-select.complete.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  
+  <style>
+    /* Fix for scrollable dropdown */
+    .form-group select {
+      max-height: 200px;
+      overflow-y: auto;
+      appearance: auto;
+      -webkit-appearance: auto;
+      cursor: pointer;
+    }
+
+    /* Better dropdown styling */
+    .form-group select option {
+      padding: 8px 12px;
+      background: #0b0d1a;
+      color: #eef2ff;
+    }
+
+    .form-group select option:hover {
+      background: #1e3a8a;
+    }
+
+    /* Optional: Add a scroll indicator */
+    .form-group select:focus {
+      border-color: #3b82f6;
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.25);
+    }
+
+    /* Make the dropdown more visible */
+    .form-group select::-webkit-scrollbar {
+      width: 6px;
+    }
+
+
+    /* Career count badge */
+    .career-count {
+      font-size: 0.8rem;
+      opacity: 0.6;
+      margin-left: 8px;
+      font-weight: 400;
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="three-canvas"></div>
+
+<div class="main-content">
+  <div class="container">
+
+    <section class="hero">
+      <h1><span class="text-gradient">AI-Powered</span> Student Career Guidance System</h1>
+      <p>Your Career Journey Starts Here</p>
+
+      <div class="hero-features">
+        <span><i class="fas fa-chart-line"></i> Skill Gap Analysis</span>
+        <span><i class="fas fa-bolt"></i> Career Readiness Score</span>
+        <span><i class="fas fa-map-signs"></i> Complete Roadmap</span>
+        <span><i class="fas fa-certificate"></i> Free Courses</span>
+        <span><i class="fas fa-project-diagram"></i> Beginner Projects</span>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <h2 class="section-title">
+        <i class="fas fa-user-graduate"></i> 
+        Student Info
+        <span class="career-count">({{ careers|length }} careers available)</span>
+      </h2>
+
+      <div class="glass form-card">
+        <div class="form-grid">
+
+          <div class="form-group">
+            <label>Name</label>
+            <input id="name" type="text" placeholder="Enter your name">
+            <div id="name-error" class="field-error"></div>
+          </div>
+
+          <div class="form-group">
+            <label>Year</label>
+            <select id="year">
+              <option>1st Year</option>
+              <option>2nd Year</option>
+              <option>3rd Year</option>
+              <option>4th Year</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Career Interest <i class="fas fa-chevron-down" style="font-size:0.7rem;opacity:0.5;"></i></label>
+            <select id="career">
+              {% for career in careers %}
+              <option value="{{ career }}" {% if loop.first %}selected{% endif %}>
+                {{ career }}
+              </option>
+              {% endfor %}
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Skills (comma separated)</label>
+            <input id="skills" type="text" placeholder="e.g. Python, SQL, Excel">
+            <div id="skills-error" class="field-error"></div>
+          </div>
+
+          <div class="form-group">
+            <button onclick="generateCareer()" class="btn-primary">
+              <i class="fas fa-route"></i> Generate Roadmap
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="resultSection" style="display:none;">
+
+      <div class="row">
+        <div class="col wide">
+          <div class="card-glow result-main-card">
+            <div class="score-circle" id="scoreCircle">
+              <div class="score-circle-inner" id="scoreText">0%</div>
+            </div>
+
+            <div>
+              <h3 id="careerResult">Career</h3>
+              <p><i class="fas fa-user"></i> Student: <strong id="nameResult"></strong></p>
+              <p><i class="fas fa-calendar"></i> Year: <strong id="yearResult"></strong></p>
+              <p><i class="fas fa-bolt"></i> AI Recommendation: <span id="aiSuggestion"></span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card-glow">
+            <i class="fas fa-percent"></i>
+            <h3 id="scoreSmall">0%</h3>
+            <p>Readiness Score</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card-glow">
+            <i class="fas fa-tools"></i>
+            <h3 id="missingCount">0</h3>
+            <p>Missing Skills</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row space-top">
+        <div class="col">
+          <div class="card-glow">
+            <h3><i class="fas fa-check-circle"></i> Required Skills</h3>
+            <div id="requiredSkills" class="skill-box"></div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card-glow">
+            <h3><i class="fas fa-times-circle"></i> Missing Skills</h3>
+            <div id="missingSkills" class="skill-box"></div>
+          </div>
+        </div>
+      </div>
+
+      <section class="space-top">
+        <h2 class="section-title"><i class="fas fa-road"></i> Complete Career Roadmap</h2>
+
+        <div class="glass table-wrapper">
+          <table class="roadmap-table">
+            <thead>
+              <tr>
+                <th>Step</th>
+                <th>Topic</th>
+                <th>Why Learn</th>
+                <th>Free Course</th>
+                <th>Certificate</th>
+                <th>YouTube</th>
+                <th>Level</th>
+                <th>Project</th>
+              </tr>
+            </thead>
+            <tbody id="roadmapBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+    </section>
+
+    <footer>
+      AI Career Guidance · Functional 3D Dashboard
+    </footer>
+
+  </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var select = document.getElementById('career');
+    if (select) {
+        // Destroy any existing instance
+        if (select.tomselect) {
+            select.tomselect.destroy();
+        }
+        
+        // Initialize Tom Select with simpler config
+        var tomSelect = new TomSelect(select, {
+            create: false,
+            maxOptions: 20,
+            placeholder: "Select a career...",
+            dropdownParent: "body",
+            maxItems: 1,
+            score: function(search) {
+                // Custom scoring to handle spaces
+                var score = this.getScoreFunction(search);
+                return function(item) {
+                    return score(item);
+                };
+            }
+        });
+        
+        // Force select the first option if it's "Data Analyst"
+        setTimeout(function() {
+            var firstOption = select.querySelector('option[value="Data Analyst"]');
+            if (firstOption && firstOption.selected) {
+                tomSelect.setValue('Data Analyst');
+            }
+        }, 100);
+    }
+});
+</script>
+
+</body>
+
+</html>

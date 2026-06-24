@@ -1,0 +1,101 @@
+Career,Step,Topic,Why_Learn,Free_Course,Certificate,YouTube,Level,Project
+Data Analyst,1,Excel,Basic data handling,Microsoft Learn,Yes,ExcelIsFun,Beginner,Student marks analysis
+Data Analyst,2,SQL,Database querying,Mode SQL Tutorial,No,Alex The Analyst,Beginner,Sales database analysis
+Data Analyst,3,Python,Data analysis automation,Kaggle Python,Yes,CodeWithHarry,Beginner,IPL data analysis
+Data Analyst,4,Pandas,Data cleaning and manipulation,Kaggle Pandas,Yes,Corey Schafer,Intermediate,Netflix dataset cleaning
+Data Analyst,5,Power BI,Dashboard building,Microsoft Learn,Yes,Data Tutorials,Intermediate,Sales dashboard
+Data Scientist,1,Python,Programming foundation,Kaggle Python,Yes,CodeWithHarry,Beginner,Iris data analysis
+Data Scientist,2,Statistics,Data understanding,Khan Academy,No,StatQuest,Beginner,Student performance analysis
+Data Scientist,3,Pandas,Data manipulation,Kaggle Pandas,Yes,Corey Schafer,Intermediate,EDA project
+Data Scientist,4,Machine Learning,Prediction models,Kaggle ML,Yes,Krish Naik,Intermediate,House price prediction
+Data Scientist,5,Deep Learning,Advanced AI,Coursera,Yes,freeCodeCamp,Advanced,Image classifier
+AI Engineer,1,Python,AI foundation,Kaggle Python,Yes,CodeWithHarry,Beginner,AI chatbot
+AI Engineer,2,Machine Learning,AI models,Kaggle ML,Yes,Krish Naik,Intermediate,Prediction model
+AI Engineer,3,Deep Learning,Neural networks,freeCodeCamp,No,CampusX,Advanced,CNN classifier
+AI Engineer,4,NLP,Text AI,Coursera,Yes,Krish Naik,Advanced,Resume analyzer
+AI Engineer,5,LLM,Modern AI apps,IBM SkillsBuild,Yes,IBM Technology,Advanced,RAG chatbot
+Web Developer,1,HTML,Website structure,freeCodeCamp,Yes,CodeWithHarry,Beginner,Portfolio website
+Web Developer,2,CSS,Website design,freeCodeCamp,Yes,Kevin Powell,Beginner,Landing page
+Web Developer,3,JavaScript,Website logic,freeCodeCamp,Yes,Chai aur Code,Intermediate,Quiz app
+Web Developer,4,React,Modern frontend,Meta Course,Yes,CodeWithHarry,Intermediate,Dashboard app
+Web Developer,5,Node.js,Backend development,freeCodeCamp,No,Thapa Technical,Advanced,Full stack app
+Cyber Security Analyst,1,Networking,Security basics,Cisco Skills For All,Yes,NetworkChuck,Beginner,Network scanner
+Cyber Security Analyst,2,Linux,System security,Cisco Skills For All,Yes,David Bombal,Beginner,Linux commands project
+Cyber Security Analyst,3,Python,Security automation,Kaggle Python,Yes,CodeWithHarry,Intermediate,Port scanner
+Cyber Security Analyst,4,Ethical Hacking,Security testing,EC Council Intro,Yes,The Cyber Mentor,Intermediate,Vulnerability report
+Cyber Security Analyst,5,SIEM,Threat monitoring,IBM SkillsBuild,Yes,IBM Technology,Advanced,Log analysis
+Cloud Engineer,1,Linux,Cloud server basics,Cisco Skills For All,Yes,NetworkChuck,Beginner,Linux server setup
+Cloud Engineer,2,AWS,Cloud platform,AWS Skill Builder,Yes,FreeCodeCamp,Beginner,Host website on AWS
+Cloud Engineer,3,Docker,Containerization,Docker Docs,No,TechWorld with Nana,Intermediate,Dockerize Flask app
+Cloud Engineer,4,Kubernetes,Cloud orchestration,Kubernetes Docs,No,TechWorld with Nana,Advanced,K8s deployment
+Cloud Engineer,5,Terraform,Infrastructure automation,HashiCorp Learn,Yes,Cloud project,Advanced,AWS infra project
+DevOps Engineer,1,Linux,Server basics,Cisco Skills For All,Yes,NetworkChuck,Beginner,Linux server setup
+DevOps Engineer,2,Docker,Containerization,Docker Docs,No,TechWorld with Nana,Intermediate,Dockerize app
+DevOps Engineer,3,Kubernetes,Orchestration,Kubernetes Docs,No,TechWorld with Nana,Intermediate,K8s cluster
+DevOps Engineer,4,CI/CD,Automation,Jenkins Docs,No,DevOps Toolkit,Advanced,CI/CD pipeline
+DevOps Engineer,5,Terraform,Infrastructure as Code,HashiCorp Learn,Yes,Cloud project,Advanced,AWS infra
+Data Engineer,1,Python,Programming base,Kaggle Python,Yes,CodeWithHarry,Beginner,Data pipeline script
+Data Engineer,2,SQL,Database querying,Mode SQL Tutorial,No,Alex The Analyst,Intermediate,ETL process
+Data Engineer,3,Spark,Big data processing,Spark Docs,No,Data Engineering,Advanced,Big data ETL
+Data Engineer,4,AWS,Cloud data services,AWS Skill Builder,Yes,FreeCodeCamp,Advanced,Data lake on AWS
+Data Engineer,5,Airflow,Workflow orchestration,Airflow Docs,No,Data Engineering,Advanced,ETL orchestration
+MLOps Engineer,1,Python,ML foundation,Kaggle Python,Yes,CodeWithHarry,Beginner,ML model
+MLOps Engineer,2,Docker,ML containerization,Docker Docs,No,TechWorld with Nana,Intermediate,Containerize ML model
+MLOps Engineer,3,Kubernetes,ML deployment,Kubernetes Docs,No,TechWorld with Nana,Intermediate,Deploy ML model
+MLOps Engineer,4,MLflow,Model lifecycle,MLflow Docs,No,Data Engineering,Advanced,ML pipeline
+MLOps Engineer,5,AWS,Scalable ML,AWS Skill Builder,Yes,FreeCodeCamp,Advanced,Production ML system
+Blockchain Developer,1,Solidity,Smart contracts,CryptoZombies,No,Dapp University,Beginner,Simple contract
+Blockchain Developer,2,Ethereum,Blockchain basics,Ethereum Docs,No,Dapp University,Intermediate,Dapp development
+Blockchain Developer,3,Web3.js,Frontend integration,Web3 Docs,No,Dapp University,Intermediate,Web3 app
+Blockchain Developer,4,JavaScript,Dapp frontend,freeCodeCamp,Yes,CodeWithHarry,Intermediate,Full dapp
+Blockchain Developer,5,Python,Blockchain analysis,Kaggle Python,Yes,CodeWithHarry,Advanced,Blockchain explorer
+UI/UX Designer,1,Figma,Design tool,Figma Docs,Yes,DesignCourse,Beginner,App design
+UI/UX Designer,2,User Research,Understanding users,Nielsen Norman,No,NNGroup,Beginner,User research doc
+UI/UX Designer,3,Wireframing,Layout planning,UX Design,No,DesignCourse,Intermediate,Wireframe set
+UI/UX Designer,4,Prototyping,Interactive designs,Figma Docs,Yes,DesignCourse,Intermediate,High-fidelity prototype
+UI/UX Designer,5,Design Systems,Consistent design,Design System,No,DesignCode,Advanced,Design system
+Mobile Developer,1,Kotlin,Android basics,Google Docs,Yes,Android Developers,Beginner,Simple app
+Mobile Developer,2,Swift,iOS basics,Apple Docs,Yes,CodeWithChris,Beginner,Simple iOS app
+Mobile Developer,3,React Native,Cross-platform,React Native Docs,No,Programming with Mosh,Intermediate,Multi-platform app
+Mobile Developer,4,Firebase,Backend services,Firebase Docs,Yes,Firebase,Intermediate,Full stack app
+Mobile Developer,5,REST APIs,API integration,freeCodeCamp,Yes,CodeWithHarry,Advanced,API integration app
+Game Developer,1,Unity,Game engine basics,Unity Learn,Yes,Brackeys,Beginner,2D platformer
+Game Developer,2,C#,Game programming,Microsoft Learn,No,Brackeys,Beginner,Simple game mechanics
+Game Developer,3,3D Modeling,Game assets,Blender Docs,No,Blender Guru,Intermediate,3D character
+Game Developer,4,Game Design,Level design,GDC,No,Game Maker's Toolkit,Intermediate,Level design
+Game Developer,5,Physics,Realistic movement,Unity Physics,No,Unity,Advanced,Physics simulation
+Product Manager,1,Agile,Project management,Scrum Guide,No,Scrum Master,Beginner,Product backlog
+Product Manager,2,User Stories,Requirement gathering,Product School,No,Product School,Intermediate,User story mapping
+Product Manager,3,Market Research,Understanding market,Coursera,Yes,Product School,Intermediate,Market analysis
+Product Manager,4,Analytics,Data driven decisions,Google Analytics,Yes,Google,Advanced,Product metrics
+Product Manager,5,Strategy,Product vision,Product Strategy,No,Product School,Advanced,Product strategy doc
+Digital Marketer,1,SEO,Search visibility,Google SEO,Yes,Moz,Beginner,SEO audit
+Digital Marketer,2,Content Marketing,Audience engagement,HubSpot,Yes,HubSpot,Beginner,Content strategy
+Digital Marketer,3,Social Media,Social presence,Social Media,No,GaryVee,Intermediate,Social media plan
+Digital Marketer,4,Email Marketing,Email campaigns,Mailchimp,Yes,Email Marketing,Intermediate,Email campaign
+Digital Marketer,5,PPC,Paid advertising,Google Ads,Yes,Google,Advanced,PPC campaign
+Data Architect,1,SQL,Database foundation,Mode SQL,No,Alex The Analyst,Beginner,Database design
+Data Architect,2,Data Modeling,Data structure,Data Modeling,No,Data Engineering,Intermediate,Data model
+Data Architect,3,ETL,Data pipeline,Data Pipeline,No,Data Engineering,Intermediate,ETL pipeline
+Data Architect,4,Big Data,Big data platforms,Big Data,No,Data Engineering,Advanced,Big data architecture
+Data Architect,5,AWS,Cloud data,Cloud Data,Yes,FreeCodeCamp,Advanced,Cloud data solution
+Full Stack Developer,1,HTML,Frontend structure,freeCodeCamp,Yes,CodeWithHarry,Beginner,Portfolio
+Full Stack Developer,2,JavaScript,Frontend logic,freeCodeCamp,Yes,Chai aur Code,Beginner,Interactive site
+Full Stack Developer,3,React,Modern UI,Meta Course,Yes,CodeWithHarry,Intermediate,Dashboard
+Full Stack Developer,4,Node.js,Backend development,freeCodeCamp,No,Thapa Technical,Intermediate,REST API
+Full Stack Developer,5,MongoDB,Databases,MongoDB Docs,Yes,Traversy Media,Advanced,Full stack MERN app
+Systems Administrator,1,Linux,Server management,Cisco Skills,Yes,NetworkChuck,Beginner,Linux server
+Systems Administrator,2,Windows Server,Windows systems,Microsoft Learn,Yes,MIT,Intermediate,Windows server
+Systems Administrator,3,Networking,Network basics,Network Course,No,NetworkChuck,Intermediate,Network setup
+Systems Administrator,4,Security,System security,Cybersecurity,Yes,Cyber Mentor,Advanced,Hardening
+Systems Administrator,5,AWS,Cloud admin,AWS Skill Builder,Yes,FreeCodeCamp,Advanced,AWS management
+Database Administrator,1,SQL,Database queries,Mode SQL,No,Alex The Analyst,Beginner,Basic queries
+Database Administrator,2,Database Design,DB structure,Database Design,No,Database Star,Intermediate,DB design
+Database Administrator,3,Backup,Data protection,Backup Course,No,Data Engineering,Intermediate,Backup strategy
+Database Administrator,4,Oracle,Oracle DB,Oracle Docs,Yes,Oracle,Advanced,Oracle admin
+Database Administrator,5,PostgreSQL,Postgres admin,Postgres Docs,No,Postgres,Advanced,Postgres admin
+Network Engineer,1,Networking,Network basics,Cisco Skills,Yes,NetworkChuck,Beginner,Network setup
+Network Engineer,2,Routing,Network routing,Cisco CCNA,Yes,NetworkChuck,Intermediate,Routing config
+Network Engineer,3,Switching,Network switching,Cisco CCNA,Yes,NetworkChuck,Intermediate,Switching config
+Network Engineer,4,Firewalls,Security,Firewall Course,No,NetworkChuck,Advanced,Firewall config
+Network Engineer,5,Python,Network automation,Python,Yes,NetworkChuck,Advanced,Network automation
