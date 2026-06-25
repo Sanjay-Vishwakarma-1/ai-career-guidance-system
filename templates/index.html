@@ -191,7 +191,7 @@
         
         <div class="glass" style="padding: 2rem;">
           <p style="font-size: 1.1rem; margin-bottom: 1.5rem; opacity: 0.9;">
-            Our AI-assisted Career Guidance System analyzes student skills, compares them with career-specific requirements stored in the career dataset, identifies missing skills, calculates career readiness, and generates a personalized learning roadmap to support students in making informed career decisions.
+            Our AI-assisted Career Guidance System analyzes student skills, compares them with career-specific requirements from the career dataset, identifies missing skills, calculates career readiness, and generates a personalized learning roadmap to support students in making informed career decisions.
           </p>
           
           <div style="display: flex; flex-direction: column; gap: 0.8rem;">
@@ -227,15 +227,15 @@
             
             <div style="text-align: center; color: rgba(255,255,255,0.3); font-size: 1.2rem;">↓</div>
             
-            <!-- STEP 3: Career Dataset Retrieval -->
+            <!-- STEP 3: Career Dataset Lookup -->
             <div style="display: flex; align-items: flex-start; gap: 1rem; background: rgba(59, 130, 246, 0.05); padding: 1rem 1.5rem; border-radius: 16px; border-left: 4px solid #a855f7;">
               <div style="background: #a855f7; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; flex-shrink: 0;">3</div>
               <div>
-                <strong style="color: #a855f7;">Career Dataset Retrieval</strong>
-                <p style="margin: 0.2rem 0; font-size: 0.95rem;">The decision-support engine retrieves the required skills for the selected career from the career dataset.</p>
+                <strong style="color: #a855f7;">Career Dataset Lookup</strong>
+                <p style="margin: 0.2rem 0; font-size: 0.95rem;">The system retrieves required skills for the selected career from the structured career dataset.</p>
                 <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.3rem;">
                   <span style="background: rgba(168, 85, 247, 0.15); padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.85rem; color: #c084fc;">Career Database (20+ careers)</span>
-                  <span style="background: rgba(168, 85, 247, 0.15); padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.85rem; color: #c084fc;">Required Skills Mapping</span>
+                  <span style="background: rgba(168, 85, 247, 0.15); padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.85rem; color: #c084fc;">Dataset Lookup</span>
                 </div>
                 <div style="margin-top: 0.4rem; background: rgba(0,0,0,0.3); padding: 0.5rem 1rem; border-radius: 8px; font-family: monospace; font-size: 0.85rem;">
                   <span style="color: #c084fc;">Career: Data Analyst → Required Skills:</span><br>
@@ -247,12 +247,12 @@
             
             <div style="text-align: center; color: rgba(255,255,255,0.3); font-size: 1.2rem;">↓</div>
             
-            <!-- STEP 4: Skill Comparison & Gap Detection -->
+            <!-- STEP 4: Skill Gap Analysis -->
             <div style="display: flex; align-items: flex-start; gap: 1rem; background: rgba(59, 130, 246, 0.05); padding: 1rem 1.5rem; border-radius: 16px; border-left: 4px solid #f472b6;">
               <div style="background: #f472b6; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; flex-shrink: 0;">4</div>
               <div>
-                <strong style="color: #f472b6;">Skill Comparison &amp; Gap Detection</strong>
-                <p style="margin: 0.2rem 0; font-size: 0.95rem;">The decision-support engine compares the student's normalized skills with the required skills from the selected career to identify missing competencies and learning priorities.</p>
+                <strong style="color: #f472b6;">Skill Gap Analysis</strong>
+                <p style="margin: 0.2rem 0; font-size: 0.95rem;">The system compares the student's normalized skills with the required skills from the selected career to identify missing competencies and learning priorities.</p>
                 <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.3rem;">
                   <span style="background: rgba(52, 211, 153, 0.15); padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.85rem; color: #34d399;">✅ Learned: 4 skills</span>
                   <span style="background: rgba(248, 113, 113, 0.15); padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.85rem; color: #f87171;">❌ Missing: 4 skills</span>
@@ -300,13 +300,13 @@
             
           </div>
           
-          <!-- Technology Stack Badge - Honest Version -->
+          <!-- Technology Stack -->
           <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.05); display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: center;">
             <span style="background: rgba(59, 130, 246, 0.1); padding: 0.4rem 1.2rem; border-radius: 20px; border: 1px solid rgba(59, 130, 246, 0.2); font-size: 0.85rem;">
-              <i class="fas fa-database" style="color: #3b82f6;"></i> Career Dataset Matching
+              <i class="fas fa-database" style="color: #3b82f6;"></i> Dataset Lookup
             </span>
             <span style="background: rgba(168, 85, 247, 0.1); padding: 0.4rem 1.2rem; border-radius: 20px; border: 1px solid rgba(168, 85, 247, 0.2); font-size: 0.85rem;">
-              <i class="fas fa-code" style="color: #a855f7;"></i> Skill Matching Engine
+              <i class="fas fa-code" style="color: #a855f7;"></i> Skill Comparison
             </span>
             <span style="background: rgba(52, 211, 153, 0.1); padding: 0.4rem 1.2rem; border-radius: 20px; border: 1px solid rgba(52, 211, 153, 0.2); font-size: 0.85rem;">
               <i class="fas fa-calculator" style="color: #34d399;"></i> Score Calculation
@@ -314,6 +314,110 @@
             <span style="background: rgba(251, 191, 36, 0.1); padding: 0.4rem 1.2rem; border-radius: 20px; border: 1px solid rgba(251, 191, 36, 0.2); font-size: 0.85rem;">
               <i class="fas fa-route" style="color: #fbbf24;"></i> Personalized Recommendations
             </span>
+            <span style="background: rgba(244, 114, 182, 0.1); padding: 0.4rem 1.2rem; border-radius: 20px; border: 1px solid rgba(244, 114, 182, 0.2); font-size: 0.85rem;">
+              <i class="fas fa-shield-alt" style="color: #f472b6;"></i> Responsible AI
+            </span>
+          </div>
+
+          <!-- Current Version Note -->
+          <div style="margin-top: 1.5rem; padding: 0.8rem 1.2rem; background: rgba(59, 130, 246, 0.05); border-radius: 12px; border: 1px dashed rgba(59, 130, 246, 0.2);">
+            <p style="font-size: 0.85rem; opacity: 0.7; text-align: center;">
+              <i class="fas fa-info-circle" style="color: #3b82f6;"></i> 
+              <strong>Current Version:</strong> This prototype uses structured career datasets and rule-based skill comparison to generate recommendations. 
+              Future versions may integrate large language models for richer guidance.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SUSTAINABILITY IMPACT -->
+      <section style="margin: 3rem 0;">
+        <h2 class="section-title"><i class="fas fa-globe-asia"></i> Sustainability Impact</h2>
+        
+        <div class="glass" style="padding: 2rem;">
+          <p style="font-size: 1rem; margin-bottom: 1.5rem; opacity: 0.9;">
+            This project aligns with the United Nations Sustainable Development Goals (SDGs) by promoting quality education, decent work, and sustainable career pathways.
+          </p>
+          
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.2rem;">
+            
+            <div style="background: rgba(59, 130, 246, 0.08); padding: 1.2rem; border-radius: 16px; border: 1px solid rgba(59, 130, 246, 0.15); text-align: center;">
+              <div style="background: #3b82f6; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.8rem;">
+                <span style="color: white; font-weight: 800; font-size: 1.2rem;">4</span>
+              </div>
+              <h4 style="color: #7aa9ff; font-size: 0.95rem;">Quality Education</h4>
+              <p style="font-size: 0.85rem; opacity: 0.7; margin-top: 0.3rem;">Provides accessible career guidance and skill development for all students</p>
+            </div>
+            
+            <div style="background: rgba(168, 85, 247, 0.08); padding: 1.2rem; border-radius: 16px; border: 1px solid rgba(168, 85, 247, 0.15); text-align: center;">
+              <div style="background: #a855f7; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.8rem;">
+                <span style="color: white; font-weight: 800; font-size: 1.2rem;">8</span>
+              </div>
+              <h4 style="color: #c084fc; font-size: 0.95rem;">Decent Work & Economic Growth</h4>
+              <p style="font-size: 0.85rem; opacity: 0.7; margin-top: 0.3rem;">Helps students find meaningful careers and reduces unemployment</p>
+            </div>
+            
+            <div style="background: rgba(52, 211, 153, 0.08); padding: 1.2rem; border-radius: 16px; border: 1px solid rgba(52, 211, 153, 0.15); text-align: center;">
+              <div style="background: #34d399; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.8rem;">
+                <span style="color: #0b0d1a; font-weight: 800; font-size: 1.2rem;">9</span>
+              </div>
+              <h4 style="color: #34d399; font-size: 0.95rem;">Industry, Innovation & Infrastructure</h4>
+              <p style="font-size: 0.85rem; opacity: 0.7; margin-top: 0.3rem;">Uses AI for educational innovation and career development</p>
+            </div>
+            
+          </div>
+          
+          <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.05);">
+            <p style="font-size: 0.9rem; opacity: 0.7; text-align: center;">
+              <i class="fas fa-leaf" style="color: #34d399;"></i> 
+              By helping students discover meaningful careers and develop relevant skills, we contribute to building a more sustainable and inclusive future.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESPONSIBLE AI CONSIDERATIONS -->
+      <section style="margin: 3rem 0;">
+        <h2 class="section-title"><i class="fas fa-shield-alt"></i> Responsible AI Considerations</h2>
+        
+        <div class="glass" style="padding: 2rem;">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.2rem;">
+            
+            <div style="background: rgba(59, 130, 246, 0.05); padding: 1.2rem; border-radius: 16px; border-left: 3px solid #3b82f6;">
+              <h4 style="color: #3b82f6; font-size: 0.95rem;"><i class="fas fa-balance-scale"></i> Fairness</h4>
+              <p style="font-size: 0.85rem; opacity: 0.8; margin-top: 0.3rem;">
+                The system recommends all 20+ careers without bias. Recommendations are based solely on skills matching, not on gender, background, or any personal attributes.
+              </p>
+            </div>
+            
+            <div style="background: rgba(168, 85, 247, 0.05); padding: 1.2rem; border-radius: 16px; border-left: 3px solid #a855f7;">
+              <h4 style="color: #a855f7; font-size: 0.95rem;"><i class="fas fa-eye"></i> Transparency</h4>
+              <p style="font-size: 0.85rem; opacity: 0.8; margin-top: 0.3rem;">
+                The system clearly explains how recommendations are generated, including the skill comparison logic and the formula used to calculate the readiness score.
+              </p>
+            </div>
+            
+            <div style="background: rgba(52, 211, 153, 0.05); padding: 1.2rem; border-radius: 16px; border-left: 3px solid #34d399;">
+              <h4 style="color: #34d399; font-size: 0.95rem;"><i class="fas fa-check-circle"></i> Ethics</h4>
+              <p style="font-size: 0.85rem; opacity: 0.8; margin-top: 0.3rem;">
+                The system promotes sustainable careers and does not provide harmful, discriminatory, or misleading recommendations.
+              </p>
+            </div>
+            
+            <div style="background: rgba(251, 191, 36, 0.05); padding: 1.2rem; border-radius: 16px; border-left: 3px solid #fbbf24;">
+              <h4 style="color: #fbbf24; font-size: 0.95rem;"><i class="fas fa-lock"></i> Privacy</h4>
+              <p style="font-size: 0.85rem; opacity: 0.8; margin-top: 0.3rem;">
+                No personal data is stored permanently. All student information is processed ephemerally and is not shared with third parties.
+              </p>
+            </div>
+            
+          </div>
+          
+          <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.05);">
+            <p style="font-size: 0.9rem; opacity: 0.7; text-align: center;">
+              <i class="fas fa-heart" style="color: #f472b6;"></i> 
+              Our AI system is designed with responsible AI principles to ensure fairness, transparency, ethics, and privacy for all users.
+            </p>
           </div>
         </div>
       </section>
@@ -337,6 +441,121 @@
             </thead>
             <tbody id="roadmapBody"></tbody>
           </table>
+        </div>
+      </section>
+
+      <!-- WHY THIS CAREER WAS RECOMMENDED -->
+      <section style="margin: 3rem 0;">
+        <h2 class="section-title"><i class="fas fa-question-circle"></i> Why This Career Was Recommended</h2>
+        
+        <div class="glass" style="padding: 2rem;">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+            
+            <div style="background: rgba(59, 130, 246, 0.05); padding: 1.2rem; border-radius: 16px; border-left: 3px solid #3b82f6;">
+              <h4 style="color: #3b82f6; font-size: 0.95rem;"><i class="fas fa-graduation-cap"></i> Skill Match Analysis</h4>
+              <p style="font-size: 0.9rem; opacity: 0.85; margin-top: 0.3rem;">
+                The system identified that your current skills align with the requirements of this career.
+              </p>
+              <div style="margin-top: 0.5rem; background: rgba(0,0,0,0.2); padding: 0.5rem 0.8rem; border-radius: 8px; font-size: 0.85rem;">
+                <span style="color: #34d399;">✅ Matched Skills: <span id="matchSkillsDisplay">Python, SQL, Excel</span></span><br>
+                <span style="color: #f87171;">❌ Missing Skills: <span id="missSkillsDisplay">Pandas, Power BI</span></span>
+              </div>
+            </div>
+            
+            <div style="background: rgba(168, 85, 247, 0.05); padding: 1.2rem; border-radius: 16px; border-left: 3px solid #a855f7;">
+              <h4 style="color: #a855f7; font-size: 0.95rem;"><i class="fas fa-chart-line"></i> Career Readiness</h4>
+              <p style="font-size: 0.9rem; opacity: 0.85; margin-top: 0.3rem;">
+                Your readiness score indicates how prepared you are for this career path.
+              </p>
+              <div style="margin-top: 0.5rem; background: rgba(0,0,0,0.2); padding: 0.5rem 0.8rem; border-radius: 8px; font-size: 0.85rem;">
+                <span style="color: #fbbf24;">📊 Score: <span id="readinessScoreDisplay">57%</span></span><br>
+                <span style="color: #7aa9ff;">💡 Recommendation: <span id="recDisplay">Focus on missing skills</span></span>
+              </div>
+            </div>
+            
+            <div style="background: rgba(52, 211, 153, 0.05); padding: 1.2rem; border-radius: 16px; border-left: 3px solid #34d399;">
+              <h4 style="color: #34d399; font-size: 0.95rem;"><i class="fas fa-globe"></i> Sustainability Connection</h4>
+              <p style="font-size: 0.9rem; opacity: 0.85; margin-top: 0.3rem;">
+                This career contributes to sustainable development and educational goals.
+              </p>
+              <div style="margin-top: 0.5rem; background: rgba(0,0,0,0.2); padding: 0.5rem 0.8rem; border-radius: 8px; font-size: 0.85rem;">
+                <span style="color: #34d399;">🌱 SDG: <span id="sdgDisplay">SDG 4, 8, 9</span></span><br>
+                <span style="color: #7aa9ff;">🌍 Impact: Quality Education & Decent Work</span>
+              </div>
+            </div>
+            
+            <!-- Recommendation Basis (was AI Confidence Level) -->
+            <div style="background: rgba(251, 191, 36, 0.05); padding: 1.2rem; border-radius: 16px; border-left: 3px solid #fbbf24;">
+              <h4 style="color: #fbbf24; font-size: 0.95rem;"><i class="fas fa-clipboard-check"></i> Recommendation Basis</h4>
+              <p style="font-size: 0.9rem; opacity: 0.85; margin-top: 0.3rem;">
+                This recommendation is based on the following factors:
+              </p>
+              <div style="margin-top: 0.5rem; background: rgba(0,0,0,0.2); padding: 0.5rem 0.8rem; border-radius: 8px; font-size: 0.85rem;">
+                <span style="color: #34d399;">✅ Based on: <span id="basedOnDisplay">Career dataset comparison</span></span><br>
+                <span style="color: #7aa9ff;">📌 Skill matching: <span id="skillMatchDisplay">4 out of 8 skills matched</span></span><br>
+                <span style="color: #fbbf24;">📊 Readiness score: <span id="scoreBasisDisplay">57%</span></span>
+              </div>
+            </div>
+            
+            <!-- Personalization Box -->
+            <div style="background: rgba(244, 114, 182, 0.05); padding: 1.2rem; border-radius: 16px; border-left: 3px solid #f472b6; grid-column: 1 / -1;">
+              <h4 style="color: #f472b6; font-size: 0.95rem;"><i class="fas fa-user-check"></i> Why This Recommendation Is Personalized</h4>
+              <p style="font-size: 0.9rem; opacity: 0.85; margin-top: 0.3rem;">
+                This recommendation is generated based on:
+              </p>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem;">
+                <span style="background: rgba(244, 114, 182, 0.15); padding: 0.3rem 0.8rem; border-radius: 12px; font-size: 0.85rem; color: #f472b6;">🎯 Selected career interest</span>
+                <span style="background: rgba(244, 114, 182, 0.15); padding: 0.3rem 0.8rem; border-radius: 12px; font-size: 0.85rem; color: #f472b6;">📝 Current skills entered by the student</span>
+                <span style="background: rgba(244, 114, 182, 0.15); padding: 0.3rem 0.8rem; border-radius: 12px; font-size: 0.85rem; color: #f472b6;">📊 Skill gap analysis</span>
+                <span style="background: rgba(244, 114, 182, 0.15); padding: 0.3rem 0.8rem; border-radius: 12px; font-size: 0.85rem; color: #f472b6;">📁 Career dataset comparison</span>
+                <span style="background: rgba(244, 114, 182, 0.15); padding: 0.3rem 0.8rem; border-radius: 12px; font-size: 0.85rem; color: #f472b6;">📈 Career readiness score</span>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPECTED IMPACT -->
+      <section style="margin: 3rem 0;">
+        <h2 class="section-title"><i class="fas fa-bullseye"></i> Expected Impact</h2>
+        
+        <div class="glass" style="padding: 2rem;">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+            
+            <div style="background: rgba(59, 130, 246, 0.05); padding: 1rem 1.2rem; border-radius: 12px; border-left: 3px solid #3b82f6;">
+              <span style="color: #3b82f6; font-size: 1.2rem;">🎯</span>
+              <p style="font-size: 0.9rem; margin-top: 0.3rem; opacity: 0.85;">Reduce confusion in career selection</p>
+            </div>
+            
+            <div style="background: rgba(168, 85, 247, 0.05); padding: 1rem 1.2rem; border-radius: 12px; border-left: 3px solid #a855f7;">
+              <span style="color: #a855f7; font-size: 1.2rem;">📊</span>
+              <p style="font-size: 0.9rem; margin-top: 0.3rem; opacity: 0.85;">Help students identify missing skills early</p>
+            </div>
+            
+            <div style="background: rgba(52, 211, 153, 0.05); padding: 1rem 1.2rem; border-radius: 12px; border-left: 3px solid #34d399;">
+              <span style="color: #34d399; font-size: 1.2rem;">📚</span>
+              <p style="font-size: 0.9rem; margin-top: 0.3rem; opacity: 0.85;">Improve employability through personalized learning paths</p>
+            </div>
+            
+            <div style="background: rgba(251, 191, 36, 0.05); padding: 1rem 1.2rem; border-radius: 12px; border-left: 3px solid #fbbf24;">
+              <span style="color: #fbbf24; font-size: 1.2rem;">🌱</span>
+              <p style="font-size: 0.9rem; margin-top: 0.3rem; opacity: 0.85;">Encourage continuous learning aligned with SDG 4</p>
+            </div>
+            
+            <div style="background: rgba(244, 114, 182, 0.05); padding: 1rem 1.2rem; border-radius: 12px; border-left: 3px solid #f472b6;">
+              <span style="color: #f472b6; font-size: 1.2rem;">🤖</span>
+              <p style="font-size: 0.9rem; margin-top: 0.3rem; opacity: 0.85;">Support informed career decisions using AI-assisted recommendations</p>
+            </div>
+            
+          </div>
+          
+          <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.05); text-align: center;">
+            <p style="font-size: 0.9rem; opacity: 0.6;">
+              <i class="fas fa-users" style="color: #7aa9ff;"></i> 
+              Beneficiaries: Students, Career Counselors, Educators, and Fresh Graduates
+            </p>
+          </div>
         </div>
       </section>
 
