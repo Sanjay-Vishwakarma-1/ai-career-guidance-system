@@ -185,6 +185,139 @@
         </div>
       </div>
 
+      <!-- AI DECISION SUPPORT WORKFLOW -->
+      <section style="margin: 3rem 0;">
+        <h2 class="section-title"><i class="fas fa-robot"></i> AI Decision Support Workflow</h2>
+        
+        <div class="glass" style="padding: 2rem;">
+          <p style="font-size: 1.1rem; margin-bottom: 1.5rem; opacity: 0.9;">
+            Our AI-assisted Career Guidance System analyzes student skills, compares them with career-specific requirements stored in the career dataset, identifies missing skills, calculates career readiness, and generates a personalized learning roadmap to support students in making informed career decisions.
+          </p>
+          
+          <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+            
+            <!-- STEP 1: Input Collection -->
+            <div style="display: flex; align-items: flex-start; gap: 1rem; background: rgba(59, 130, 246, 0.05); padding: 1rem 1.5rem; border-radius: 16px; border-left: 4px solid #3b82f6;">
+              <div style="background: #3b82f6; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; flex-shrink: 0;">1</div>
+              <div>
+                <strong style="color: #3b82f6;">Student Input Collection</strong>
+                <p style="margin: 0.2rem 0; font-size: 0.95rem;">The system collects student information including name, academic year, career interest, and existing skills.</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.3rem;">
+                  <span style="background: rgba(59, 130, 246, 0.15); padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.85rem; color: #7aa9ff;">Name</span>
+                  <span style="background: rgba(59, 130, 246, 0.15); padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.85rem; color: #7aa9ff;">Academic Year</span>
+                  <span style="background: rgba(59, 130, 246, 0.15); padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.85rem; color: #7aa9ff;">Career Interest</span>
+                  <span style="background: rgba(59, 130, 246, 0.15); padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.85rem; color: #7aa9ff;">Skills (comma separated)</span>
+                </div>
+              </div>
+            </div>
+            
+            <div style="text-align: center; color: rgba(255,255,255,0.3); font-size: 1.2rem;">↓</div>
+            
+            <!-- STEP 2: Text Cleaning & Skill Normalization -->
+            <div style="display: flex; align-items: flex-start; gap: 1rem; background: rgba(59, 130, 246, 0.05); padding: 1rem 1.5rem; border-radius: 16px; border-left: 4px solid #6b8cff;">
+              <div style="background: #6b8cff; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; flex-shrink: 0;">2</div>
+              <div>
+                <strong style="color: #6b8cff;">Text Cleaning &amp; Skill Normalization</strong>
+                <p style="margin: 0.2rem 0; font-size: 0.95rem;">The system processes the student's skill input by removing extra spaces, converting to lowercase, and splitting by commas to normalize the data.</p>
+                <div style="margin-top: 0.4rem; background: rgba(0,0,0,0.3); padding: 0.5rem 1rem; border-radius: 8px; font-family: monospace; font-size: 0.85rem; color: #93c5fd;">
+                  <i class="fas fa-code"></i> "Python, SQL, Excel" → <span style="color: #34d399;">['python', 'sql', 'excel']</span>
+                </div>
+              </div>
+            </div>
+            
+            <div style="text-align: center; color: rgba(255,255,255,0.3); font-size: 1.2rem;">↓</div>
+            
+            <!-- STEP 3: Career Dataset Retrieval -->
+            <div style="display: flex; align-items: flex-start; gap: 1rem; background: rgba(59, 130, 246, 0.05); padding: 1rem 1.5rem; border-radius: 16px; border-left: 4px solid #a855f7;">
+              <div style="background: #a855f7; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; flex-shrink: 0;">3</div>
+              <div>
+                <strong style="color: #a855f7;">Career Dataset Retrieval</strong>
+                <p style="margin: 0.2rem 0; font-size: 0.95rem;">The decision-support engine retrieves the required skills for the selected career from the career dataset.</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.3rem;">
+                  <span style="background: rgba(168, 85, 247, 0.15); padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.85rem; color: #c084fc;">Career Database (20+ careers)</span>
+                  <span style="background: rgba(168, 85, 247, 0.15); padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.85rem; color: #c084fc;">Required Skills Mapping</span>
+                </div>
+                <div style="margin-top: 0.4rem; background: rgba(0,0,0,0.3); padding: 0.5rem 1rem; border-radius: 8px; font-family: monospace; font-size: 0.85rem;">
+                  <span style="color: #c084fc;">Career: Data Analyst → Required Skills:</span><br>
+                  <span style="color: #34d399;">✅ Python, SQL, Excel</span><br>
+                  <span style="color: #f87171;">❌ Pandas, Power BI, Tableau, Statistics</span>
+                </div>
+              </div>
+            </div>
+            
+            <div style="text-align: center; color: rgba(255,255,255,0.3); font-size: 1.2rem;">↓</div>
+            
+            <!-- STEP 4: Skill Comparison & Gap Detection -->
+            <div style="display: flex; align-items: flex-start; gap: 1rem; background: rgba(59, 130, 246, 0.05); padding: 1rem 1.5rem; border-radius: 16px; border-left: 4px solid #f472b6;">
+              <div style="background: #f472b6; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; flex-shrink: 0;">4</div>
+              <div>
+                <strong style="color: #f472b6;">Skill Comparison &amp; Gap Detection</strong>
+                <p style="margin: 0.2rem 0; font-size: 0.95rem;">The decision-support engine compares the student's normalized skills with the required skills from the selected career to identify missing competencies and learning priorities.</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.3rem;">
+                  <span style="background: rgba(52, 211, 153, 0.15); padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.85rem; color: #34d399;">✅ Learned: 4 skills</span>
+                  <span style="background: rgba(248, 113, 113, 0.15); padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.85rem; color: #f87171;">❌ Missing: 4 skills</span>
+                </div>
+              </div>
+            </div>
+            
+            <div style="text-align: center; color: rgba(255,255,255,0.3); font-size: 1.2rem;">↓</div>
+            
+            <!-- STEP 5: Score Calculation -->
+            <div style="display: flex; align-items: flex-start; gap: 1rem; background: rgba(59, 130, 246, 0.05); padding: 1rem 1.5rem; border-radius: 16px; border-left: 4px solid #34d399;">
+              <div style="background: #34d399; color: #0b0d1a; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; flex-shrink: 0;">5</div>
+              <div>
+                <strong style="color: #34d399;">Career Readiness Score Calculation</strong>
+                <p style="margin: 0.2rem 0; font-size: 0.95rem;">The system calculates the match score using the formula:</p>
+                <div style="margin-top: 0.4rem; background: rgba(0,0,0,0.3); padding: 0.5rem 1rem; border-radius: 8px; font-family: monospace; font-size: 0.95rem; text-align: center;">
+                  <span style="color: #34d399;">4 Learned Skills</span> <span style="color: rgba(255,255,255,0.4);">÷</span> <span style="color: #fbbf24;">8 Required Skills</span> <span style="color: rgba(255,255,255,0.4);">× 100 =</span> <span style="color: #3b82f6; font-weight: 700;">50% Readiness</span>
+                </div>
+              </div>
+            </div>
+            
+            <div style="text-align: center; color: rgba(255,255,255,0.3); font-size: 1.2rem;">↓</div>
+            
+            <!-- STEP 6: Decision Support Output -->
+            <div style="display: flex; align-items: flex-start; gap: 1rem; background: rgba(251, 191, 36, 0.08); padding: 1rem 1.5rem; border-radius: 16px; border-left: 4px solid #fbbf24; border: 1px solid rgba(251, 191, 36, 0.2);">
+              <div style="background: #fbbf24; color: #0b0d1a; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; flex-shrink: 0;">6</div>
+              <div>
+                <strong style="color: #fbbf24;">Decision Support Output</strong>
+                <p style="margin: 0.2rem 0; font-size: 0.95rem;">The system generates a personalized learning pathway and explains:</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.3rem;">
+                  <span style="background: rgba(251, 191, 36, 0.15); padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.85rem; color: #fbbf24;">✔ Why this career was recommended</span>
+                  <span style="background: rgba(251, 191, 36, 0.15); padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.85rem; color: #fbbf24;">✔ Which skills are missing</span>
+                  <span style="background: rgba(251, 191, 36, 0.15); padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.85rem; color: #fbbf24;">✔ Which skills should be learned first</span>
+                  <span style="background: rgba(251, 191, 36, 0.15); padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.85rem; color: #fbbf24;">✔ Which roadmap should be followed</span>
+                </div>
+                <div style="margin-top: 0.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                  <span style="background: rgba(251, 191, 36, 0.1); padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.85rem; color: #fbbf24;">🎯 Career Recommendation</span>
+                  <span style="background: rgba(251, 191, 36, 0.1); padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.85rem; color: #fbbf24;">📊 Skill Gap Analysis</span>
+                  <span style="background: rgba(251, 191, 36, 0.1); padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.85rem; color: #fbbf24;">🗺️ Learning Roadmap</span>
+                  <span style="background: rgba(251, 191, 36, 0.1); padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.85rem; color: #fbbf24;">📚 Free Courses</span>
+                  <span style="background: rgba(251, 191, 36, 0.1); padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.85rem; color: #fbbf24;">🚀 Beginner Projects</span>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
+          <!-- Technology Stack Badge - Honest Version -->
+          <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.05); display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: center;">
+            <span style="background: rgba(59, 130, 246, 0.1); padding: 0.4rem 1.2rem; border-radius: 20px; border: 1px solid rgba(59, 130, 246, 0.2); font-size: 0.85rem;">
+              <i class="fas fa-database" style="color: #3b82f6;"></i> Career Dataset Matching
+            </span>
+            <span style="background: rgba(168, 85, 247, 0.1); padding: 0.4rem 1.2rem; border-radius: 20px; border: 1px solid rgba(168, 85, 247, 0.2); font-size: 0.85rem;">
+              <i class="fas fa-code" style="color: #a855f7;"></i> Skill Matching Engine
+            </span>
+            <span style="background: rgba(52, 211, 153, 0.1); padding: 0.4rem 1.2rem; border-radius: 20px; border: 1px solid rgba(52, 211, 153, 0.2); font-size: 0.85rem;">
+              <i class="fas fa-calculator" style="color: #34d399;"></i> Score Calculation
+            </span>
+            <span style="background: rgba(251, 191, 36, 0.1); padding: 0.4rem 1.2rem; border-radius: 20px; border: 1px solid rgba(251, 191, 36, 0.2); font-size: 0.85rem;">
+              <i class="fas fa-route" style="color: #fbbf24;"></i> Personalized Recommendations
+            </span>
+          </div>
+        </div>
+      </section>
+
       <section class="space-top">
         <h2 class="section-title"><i class="fas fa-road"></i> Complete Career Roadmap</h2>
 
